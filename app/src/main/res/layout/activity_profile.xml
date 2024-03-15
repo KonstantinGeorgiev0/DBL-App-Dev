@@ -50,7 +50,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add Image" />
+            android:text="Add Image"
+            android:layout_centerInParent="true" />
     </RelativeLayout>
 
     <!-- User Information -->
