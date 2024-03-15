@@ -6,6 +6,6 @@
     android:drawablePadding="16dp"
     android:gravity="center_vertical"
     android:padding="16dp"
-    android:textSize="18sp"
+    android:textSize="20sp"
     android:text="Element Text"
     app:drawableStartCompat="@drawable/ic_launcher_background" />
