@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupDashboard() {
-        String[] titles = {"Matching", "Schedule", "Provide Help", "Seek Help", "Profile"};
+        String[] titles = {
+                "Matching", "Schedule", "Provide Help", "Seek Help", "Profile"
+        };
         int[] icons = {
                 R.drawable.ic_match,
                 R.drawable.ic_schedule,
@@ -50,7 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.ic_profile
         };
 
-        int[] itemIds = {R.id.matching, R.id.schedule, R.id.provide_help, R.id.seek_help, R.id.profile};
+        int[] itemIds = {
+                R.id.matching, R.id.schedule, R.id.provide_help, R.id.seek_help, R.id.profile
+        };
 
         for (int i = 0; i < itemIds.length; i++) {
             TextView item = findViewById(itemIds[i]);
