@@ -4,12 +4,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
+
+    <!-- Header with title and message icon -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvHomePageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Home Page"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ImageView
+            android:id="@+id/ivMessageIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_message" />
+    </RelativeLayout>
+
+    <!-- Horizontal bar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
     <!--  Icons  -->
     <include layout="@layout/dashboard_item" android:id="@+id/matching" />
     <include layout="@layout/dashboard_item" android:id="@+id/schedule" />
     <include layout="@layout/dashboard_item" android:id="@+id/provide_help" />
     <include layout="@layout/dashboard_item" android:id="@+id/seek_help" />
     <include layout="@layout/dashboard_item" android:id="@+id/profile" />
+
     <!--  Menu bar  -->
     <FrameLayout
         android:id="@+id/content"
@@ -17,9 +47,11 @@
         android:layout_height="0dp"
         android:layout_weight="1">
     </FrameLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/navigation_menu" />
+
 </LinearLayout>
