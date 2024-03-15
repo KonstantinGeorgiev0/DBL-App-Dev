@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,6 +24,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setupDashboard();
+
+//        BottomNavigationView navView = findViewById(R.id.navigation);
+//        navView.setOnItemSelectedListener(item -> {
+//            int itemId = item.getItemId();
+//            if (itemId == R.id.navigation_matching) {
+//                // Handle navigation for Matching
+//            } else if (itemId == R.id.navigation_schedule) {
+//                // Handle navigation for Schedule
+//            } else if (itemId == R.id.navigation_profile) {
+//                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+//                startActivity(intent);
+//            }
+//            return true; // Return true to display the item as the selected item
+//        });
     }
 
     private void setupDashboard() {
